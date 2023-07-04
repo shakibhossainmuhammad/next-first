@@ -36,15 +36,18 @@ const links = [
 ];
 const Navbar = () => {
   return (
-    <div>
-      <Link href="/">HelloWorld</Link>
-      <div>
+    <div className="h-[100px] flex justify-between items-center">
+      <Link className="font-bold text-[22px]" href="/">
+        Soft Dazzle
+      </Link>
+      <div className="flex items-center gap-5">
         {links.map((link) => (
-          <Link key={link.id} href={link.url}>
+          <Link key={link.id} href={link.url} className="">
             {link.title}
           </Link>
         ))}
         <button
+          className="p-[5px] border-0 bg-[#53c28b] text-white rounded-[3px]"
           onClick={() => {
             console.log('Logged Out');
           }}
