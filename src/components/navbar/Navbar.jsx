@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
 import React from 'react';
+import DarkModeToggle from '../DarkModeToggle/DarkModeToggle';
 
 const links = [
   {
@@ -41,6 +42,7 @@ const Navbar = () => {
         Soft Dazzle
       </Link>
       <div className="flex items-center gap-5">
+        <DarkModeToggle />
         {links.map((link) => (
           <Link key={link.id} href={link.url} className="">
             {link.title}
