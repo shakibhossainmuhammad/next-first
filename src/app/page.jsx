@@ -1,3 +1,4 @@
+import Button from '@/components/Button/Button';
 import Image from 'next/image';
 import Hero from 'public/hero.png';
 
@@ -12,9 +13,7 @@ export default function Home() {
           Tuning your Idea into Reality. We bring together the teams from the
           global tech industry
         </p>
-        <button className="p-5 cursor-pointer bg-[#53c28b] rounded-[5px] text-white w-max">
-          See Our Work
-        </button>
+        <Button url="/portfolio" text="See Our Work" />
       </div>
       <div>
         <Image src={Hero} alt="" className="w-full h-[500px] object-cover" />
