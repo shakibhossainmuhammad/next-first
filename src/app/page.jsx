@@ -16,7 +16,11 @@ export default function Home() {
         <Button url="/portfolio" text="See Our Work" />
       </div>
       <div>
-        <Image src={Hero} alt="" className="w-full h-[500px] object-cover" />
+        <Image
+          src={Hero}
+          alt=""
+          className="w-full h-[500px] object-contain animate-[move2_3s_infinite_ease_alternate]"
+        />
       </div>
     </div>
   );
